@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("./font/Cafe24Ssurround-v2.0.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SchoolBoardPencil";
+  src: url("./font/HakgyoansimBunpilR.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* * {
+    outline: 3px solid red;
+  } */
+
+body {
+  background: rgb(254, 214, 143);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.backScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainScreen {
+  width: 80vw;
+  height: 60vh;
+  background-color: rgb(8, 154, 8);
+  border: 10px solid rgb(211, 140, 32);
+  border-radius: 5px;
+}
+
+.problemSet {
+  margin: 20px;
+  font-family: "SchoolBoardPencil";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.problemTitle {
+  font-size: 40px;
+}
+
+.problemExplanation {
+  font-size: 20px;
+}
+
+.resultBoard {
+  margin-top: 50px;
+  font-family: "SchoolBoardPencil";
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.computerRandomTitle {
+  font-size: 40px;
+  color: rgb(251, 251, 78);
+}
+
+.computerRandomNumber {
+  font-size: 30px;
+}
+
+.currentTitle {
+  font-size: 40px;
+  color: rgb(60, 60, 250);
+}
+
+.currentCount {
+  font-size: 30px;
+}
+
+.countTitle {
+  font-size: 40px;
+  color: rgb(255, 81, 81);
+}
+
+.countResult {
+  font-size: 30px;
+}
+
+.buttonSet {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttonSet button {
+  width: 150px;
+  height: 100px;
+  border: 3px solid black;
+  border-radius: 30px;
+  font-size: 30px;
+  font-family: "SchoolBoardPencil";
+  font-weight: bolder;
+}
+
+.increaseButton {
+  background-color: rgb(66, 223, 218);
+}
+
+.decreaseButton {
+  background-color: rgb(255, 160, 88);
+}
+
+.boardSupport {
+  width: 90vw;
+  height: 3vh;
+  background-color: rgb(211, 140, 32);
+  border-radius: 30px;
+  border-top: 3px solid rgb(93, 93, 93);
+}
