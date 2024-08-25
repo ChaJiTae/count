@@ -51,10 +51,17 @@ function App() {
             3 감소
           </button>
           <button className="decreaseButton" onClick={() => decrease(5)}>
-            5 증가
+            5 감소
           </button>
         </div>
+        <div className="memoBoard">
+          <div className="memoTitle">떠든 사람</div>
+          <div className="memoPerson">홍길동</div>
+          <div className="memoPerson">코알누</div>
+        </div>
         <div className="boardAddDesign">
+          <div className="boardPencilWhite"></div>
+          <div className="boardPencilBlue"></div>
           <div className="boardPencilRed"></div>
         </div>
       </div>
