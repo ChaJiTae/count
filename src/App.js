@@ -25,6 +25,7 @@ function App() {
             무작위 숫자가 나타납니다. +5, +3, -3, -5를 사용하여 적은 횟수로
             숫자가 되도록 만들어주세요
           </div>
+          <div className="problemExample">예시</div>
         </div>
         <div className="resultBoard">
           <div className="computerRandomSet">
