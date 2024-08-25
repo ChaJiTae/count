@@ -2,18 +2,21 @@ import { useState } from "react";
 import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
 
+const computerRandomNumber = Math.floor(Math.random() * 51) + 50;
+
 function App() {
   const count = useSelector((state) => state.count);
-  const currentCount = useState(0);
-  const computerRandomNumber = useState(0);
+  const [currentCount, setCurrentCount] = useState(0);
   const dispatch = useDispatch();
 
   const increase = (num) => {
     dispatch({ type: "INCREAMENT", payload: { num } });
+    setCurrentCount(currentCount + 1);
   };
 
   const decrease = (num) => {
     dispatch({ type: "DECREAMENT", payload: { num } });
+    setCurrentCount(currentCount + 1);
   };
 
   return (
@@ -25,7 +28,9 @@ function App() {
             무작위 숫자가 나타납니다. +5, +3, -3, -5를 사용하여 적은 횟수로
             숫자가 되도록 만들어주세요
           </div>
-          <div className="problemExample">예시</div>
+          <div className="problemExample">
+            아직 최소 횟수 관련하여 알고리즘 적용중입니다...
+          </div>
         </div>
         <div className="resultBoard">
           <div className="computerRandomSet">
@@ -60,6 +65,11 @@ function App() {
           <div className="memoPerson">홍길동</div>
           <div className="memoPerson">코알누</div>
         </div>
+        {computerRandomNumber === count ? (
+          <div className="answer">정답!</div>
+        ) : (
+          <div></div>
+        )}
         <div className="boardAddDesign">
           <div className="boardPencilWhite"></div>
           <div className="boardPencilBlue"></div>
