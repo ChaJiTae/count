@@ -192,3 +192,160 @@ body {
   font-size: 50px;
   margin-top: 50px;
 }
+
+@media (max-width: 768px) {
+  .problemSet {
+    margin: 10px;
+    font-family: "SchoolBoardPencil";
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .problemTitle {
+    font-size: 20px;
+  }
+
+  .problemExplanation {
+    font-size: 12px;
+  }
+
+  .problemExample {
+    font-size: 10px;
+  }
+
+  .resultBoard {
+    margin-top: 50px;
+    display: flex;
+    font-family: "SchoolBoardPencil";
+    color: white;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .computerRandomTitle {
+    font-size: 18px;
+    color: rgb(251, 251, 78);
+  }
+
+  .computerRandomNumber {
+    font-size: 30px;
+  }
+
+  .currentTitle {
+    font-size: 18px;
+    color: rgb(60, 60, 250);
+  }
+
+  .currentCount {
+    font-size: 30px;
+  }
+
+  .countTitle {
+    font-size: 18px;
+    color: rgb(255, 81, 81);
+  }
+
+  .countResult {
+    font-size: 30px;
+  }
+
+  .buttonSet {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .buttonSet button {
+    width: 75px;
+    height: 75px;
+    border: 3px solid black;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: "SchoolBoardPencil";
+    font-weight: bolder;
+    transition: 0.3s ease-in-out;
+  }
+
+  .buttonSet button:hover {
+    transform: scale(1.3);
+  }
+
+  .increaseButton {
+    background-color: rgb(66, 223, 218);
+  }
+
+  .decreaseButton {
+    background-color: rgb(255, 160, 88);
+  }
+
+  .memoBoard {
+    display: flex;
+    flex-direction: column;
+    width: 10vh;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: "SchoolBoardPencil";
+    color: white;
+    text-align: center;
+    gap: 5px;
+  }
+
+  .memoTitle {
+    font-size: 18px;
+  }
+
+  .boardAddDesign {
+    position: absolute;
+    width: 300px;
+    height: 0px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .boardPencilWhite {
+    width: 55px;
+    height: 12px;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .boardPencilBlue {
+    width: 60px;
+    height: 12px;
+    border-radius: 2px;
+    background-color: rgb(37, 169, 224);
+  }
+
+  .boardPencilRed {
+    width: 80px;
+    height: 12px;
+    border-radius: 2px;
+    background-color: rgb(239, 65, 102);
+  }
+
+  .boardSupport {
+    width: 90vw;
+    height: 3vh;
+    background-color: rgb(211, 140, 32);
+    border-radius: 30px;
+    border-top: 3px solid rgb(93, 93, 93);
+    box-shadow: 20px 20px 10px rgb(141, 135, 135);
+    z-index: 1;
+  }
+
+  .answer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "SchoolBoardPencil";
+    color: white;
+    font-size: 50px;
+    margin-top: 30px;
+  }
+}
